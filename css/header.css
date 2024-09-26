@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap");
+
+/* COMMON CSS START*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+:root {
+  --blue_color: #4a38e79c;
+  --blue_dark_color: #4938e7f5;
+  --white_color: #ffffff;
+  --black_font_color: #181818;
+  --gray_font_color: #5d5d5d;
+  --footer_background_color: #5956e8;
+  --roboto: "Roboto", sans-serif;
+
+  --header_font_size: 40px;
+  --header_font_weight: 700;
+  --paragraph_font_size: 16px;
+  --paragraph_font_weight: 400;
+}
+
+body {
+  font-family: var(--roboto);
+}
+
+/* COMMON CSS END*/
+
+/* NAVBAR CSS START */
+nav {
+  padding: 34px 0;
+  background-color: var(--white_color);
+}
+
+.navbarWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navItems {
+  display: flex;
+  column-gap: 50px;
+  align-items: center;
+}
+
+.navItems_list {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--black_font_color);
+  transition: ease 0.1s;
+}
+
+.navItems_list:hover {
+  color: var(--blue_color);
+}
+
+.button {
+  padding: 13px 24px;
+  background-color: var(--blue_color);
+  border: none;
+  border-radius: 10px;
+  color: var(--white_color);
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+}
+
+.button:hover {
+  opacity: 0.7;
+}
+/* NAVBAR CSS END */
+/* BANNER CSS START */
+#bannerPart {
+  padding: 182px 0;
+  background-color: var(--blue_color);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.BannerLeft {
+  max-width: 542px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: 25px;
+}
+
+.BannerLeft__title {
+  font-size: 65px;
+  font-weight: var(--header_font_weight);
+  line-height: 80px;
+  color: var(--white_color);
+}
+
+.BannerLeft__summary {
+  font-size: var(--paragraph_font_size);
+  font-weight: var(--paragraph_font_weight);
+  color: var(--white_color);
+
+  line-height: 27px;
+}
+
+.button--modifier {
+  background-color: var(--white_color);
+  color: var(--blue_color);
+  margin-top: 5px;
+}
+/* BANNER CSS END */
